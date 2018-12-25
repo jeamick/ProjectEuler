@@ -1,4 +1,3 @@
-
 # Solution to Project Euler problem 1
 # Copyright (c) jeamick. All rights reserved.
 # 
@@ -9,12 +8,7 @@
 # Maybe Better Solution 
 def RefactorIterator(a, b):
 
-    if(a%b==0):
-        p = int(a/b)
-    else:
-        p = int(a/b) + 1
-
-    return p
+    return int(a/b) if (a%b==0) else int(a/b) + 1
     
 def SumDivInfTo1000(Nmbre):
       
