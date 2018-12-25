@@ -5,7 +5,7 @@
 
 
 # Maybe Better/Efficient Solution 
-def even_fib(limit):
+def fib_lim(limit):
     
     a, b = 0, 1
     while a < limit:
@@ -14,4 +14,4 @@ def even_fib(limit):
         a, b = b, a + b
 
 if __name__ == "__main__":
-    print(sum(even_fib(4000000)))
+    print(sum(fib_lim(4000000)))
