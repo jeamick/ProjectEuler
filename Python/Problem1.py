@@ -1,6 +1,5 @@
 # Solution to Project Euler problem 1
 # Copyright (c) jeamick. All rights reserved.
-# 
 # https://projecteuler.net/problem=1
 # https://github.com/jeamick/ProjectEuler
 
