@@ -14,5 +14,4 @@ def SumDivInfToNmbre(Nmbre):
     return 3 * sum(range(1, RefactorIterator(Nmbre, 3))) + 5 * sum(range(1, RefactorIterator(Nmbre, 5))) - 15 * sum(range(1, RefactorIterator(Nmbre, 15)))
         
 if __name__ == "__main__":
-
     print(SumDivInfToNmbre(1000))
