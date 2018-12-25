@@ -5,7 +5,7 @@
 # https://github.com/jeamick/ProjectEuler
 
 
-# Maybe Better Solution 
+# Maybe Better/Efficient Solution 
 def RefactorIterator(a, b):
 
     return int(a/b) if (a%b==0) else int(a/b) + 1
