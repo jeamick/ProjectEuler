@@ -1,8 +1,7 @@
 # Timing function for Euler problem using decoratoirs
-# Copyright (c) jeamick. All rights reserved.
+# Credit to James Powell talk about 'So you want to be a Python expert'. All rights reserved.
 # https://projecteuler.net/problem=3
 # https://github.com/jeamick/ProjectEuler
-
 
 def timer(func):
     def f(*args, **kwargs):
@@ -13,15 +12,22 @@ def timer(func):
         return rv
     return f
 
+def ntimes(f):
+    def wrapper(*args, **kwargs):
+        for _ in range(n):
+            rv = f(*args, **kwargs)
+        return rv
+    return wrapper
 ###############################
 #########  Example ############
 ###############################
 
-@timer
+@ntimes
 def test(x, y=45):
     return [2*x+y*x-x*x for i in range(x*y)][45]
 
 if __name__ == "__main__":
+    n = 2 
     from time import time
     print(test(15))
 
