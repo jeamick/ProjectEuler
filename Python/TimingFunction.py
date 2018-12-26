@@ -26,6 +26,7 @@ def ntimes(n):
 ###############################
 
 @ntimes(2)
+@timer
 def test(x, y=45):
     return [2*x+y*x-x*x for i in range(x*y)][45]
 
@@ -37,8 +38,10 @@ if __name__ == "__main__":
 #########  Output after Execution ############
 ##############################################
 
-# Run 0 : test
-# Run 1 : test
+# Run 0 : f
+# Time elapsed:  0.0
+# Run 1 : f
+# Time elapsed:  0.0
 # 480
 
 
