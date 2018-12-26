@@ -1,7 +1,5 @@
-# Timing function for Euler problem using decoratoirs
+# Timing function for Euler problem using decorators
 # Credit to James Powell talk about 'So you want to be a Python expert'. All rights reserved.
-# https://projecteuler.net/problem=3
-# https://github.com/jeamick/ProjectEuler
 
 def timer(func):
     from time import time
