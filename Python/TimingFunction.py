@@ -4,6 +4,7 @@
 # https://github.com/jeamick/ProjectEuler
 
 def timer(func):
+    from time import time
     def f(*args, **kwargs):
         before = time()
         rv = func(*args)
@@ -30,8 +31,8 @@ def ntimes(n):
 def test(x, y=45):
     return [2*x+y*x-x*x for i in range(x*y)][45]
 
+
 if __name__ == "__main__":
-    from time import time
     print(test(15))
 
 ##############################################
