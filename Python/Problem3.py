@@ -9,8 +9,7 @@ def primeFactors(n):
         ListOfPrimeFactor.append(2), 
         n = n / 2
           
-    for i in range(3, int(math.sqrt(n))+1, 2): 
-          
+    for i in range(3, int(math.sqrt(n))+1, 2):   
         while n % i == 0: 
             ListOfPrimeFactor.append(int(i)), 
             n = n / i 
