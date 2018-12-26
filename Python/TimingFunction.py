@@ -19,11 +19,7 @@ def timer(func):
 
 @timer
 def test(x, y=45):
-    a=[] 
-    for i in range(1, 45):
-        a.append(2*x+y*x-x*x)
-
-    return x + y * 1500 + x * 45 *x 
+    return [2*x+y*x-x*x for i in range(x*y)][45]
 
 if __name__ == "__main__":
     from time import time
