@@ -27,8 +27,8 @@ def test(x, y=45):
     return [2*x+y*x-x*x for i in range(x*y)][45]
 
 if __name__ == "__main__":
-    n = 2 
     from time import time
+    n = 2 
     print(test(15))
 
 
