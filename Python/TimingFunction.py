@@ -12,31 +12,34 @@ def timer(func):
         return rv
     return f
 
-def ntimes(f):
-    def wrapper(*args, **kwargs):
-        for _ in range(n):
-            rv = f(*args, **kwargs)
-        return rv
-    return wrapper
+def ntimes(n):
+    def inner(f):
+        def wrapper(*args, **kwargs):
+            for _ in range(n):
+                print(('Run {} : {.__name__} '.format(_, f)))
+                rv = f(*args, **kwargs)
+            return rv
+        return wrapper
+    return inner
+
 ###############################
 #########  Example ############
 ###############################
 
-@ntimes
+@ntimes(2)
 def test(x, y=45):
     return [2*x+y*x-x*x for i in range(x*y)][45]
 
 if __name__ == "__main__":
     from time import time
-    n = 2 
     print(test(15))
-
 
 ##############################################
 #########  Output after Execution ############
 ##############################################
 
-# Time elapsed:  0.0
+# Run 0 : test
+# Run 1 : test
 # 480
 
 
