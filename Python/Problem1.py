@@ -6,11 +6,9 @@
 
 # Maybe Better/Efficient Solution 
 def RefactorIterator(a, b):
-
     return int(a/b) if (a%b==0) else int(a/b) + 1
     
-def SumDivInfToNmbre(Nmbre):
-      
+def SumDivInfToNmbre(Nmbre): 
     return 3 * sum(range(1, RefactorIterator(Nmbre, 3))) + 5 * sum(range(1, RefactorIterator(Nmbre, 5))) - 15 * sum(range(1, RefactorIterator(Nmbre, 15)))
         
 if __name__ == "__main__":
