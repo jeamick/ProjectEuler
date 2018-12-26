@@ -22,4 +22,3 @@ def primeFactors(n):
 if __name__ == "__main__":
     import math
     print(primeFactors(600851475143)[len(primeFactors(454822))-1])
-    

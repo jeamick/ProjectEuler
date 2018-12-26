@@ -43,6 +43,3 @@ if __name__ == "__main__":
 # Run 1 : f
 # Time elapsed:  0.0
 # 480
-
-
-
