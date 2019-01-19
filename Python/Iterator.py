@@ -4,7 +4,7 @@
 class Counter:
     def __init__(self, low, high):
         # set class attributes inside the magic method __init__
-        # for "inistalise"
+        # for "initialize"
         self.current = low
         self.high = high
 
