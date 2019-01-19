@@ -1,7 +1,12 @@
-
-
+# Solution to Project Euler problem 7
+# Copyright (c) jeamick. All rights reserved.
+# https://projecteuler.net/problem=7
+# https://github.com/jeamick/ProjectEuler
 
 def timer(func):
+    '''
+    Timing Function using decorator
+    '''
     from time import time
     def f(*args, **kwargs):
         before = time()
@@ -11,7 +16,6 @@ def timer(func):
         return rv
     return f
         
-
  def fast_nth_prime(n, limit=125000):
     
     if limit % 2 != 0: 
