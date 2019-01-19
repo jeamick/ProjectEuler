@@ -5,8 +5,8 @@
 
 def Palindrome_Number():
     palind = None
-    for n in xrange(100, 1000):
-        for m in xrange(100, 1000):
+    for n in range(100, 1000):
+        for m in range(100, 1000):
             prod = n * m
             if str(prod) == str(prod)[::-1]:
                 if palind is None or prod > palind:
