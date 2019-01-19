@@ -1,5 +1,5 @@
-
-
+# Iterator function to mimic for loops
+# All rights reserved.
 
 class Counter:
     def __init__(self, low, high):
