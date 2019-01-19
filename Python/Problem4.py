@@ -4,7 +4,6 @@
 # https://github.com/jeamick/ProjectEuler
 
 def Palindrome_Number():
-
     palind = None
     for n in xrange(100, 1000):
         for m in xrange(100, 1000):
