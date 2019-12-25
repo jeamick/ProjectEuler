@@ -3,7 +3,7 @@
 # https://projecteuler.net/problem=3
 # https://github.com/jeamick/ProjectEuler
 
-def primeFactors(n): 
+def primeFactors(n :int): 
     ListOfPrimeFactor = [] 
     while n % 2 == 0: 
         ListOfPrimeFactor.append(2), 
