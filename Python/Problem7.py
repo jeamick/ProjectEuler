@@ -16,7 +16,7 @@ def timer(func):
         return rv
     return f
         
- def fast_nth_prime(n, limit=125000):
+ def fast_nth_prime(n :int , limit=125000 :int):
     
     if limit % 2 != 0: 
         limit += 1
